@@ -11,8 +11,9 @@
     <title>Laravel Comics</title>
 </head>
 <body>
-
+    @include('partials.header')
     @yield('content')
-
+    @include('partials.footer')
+    @include('partials.footer_sign')
 </body>
 </html>
