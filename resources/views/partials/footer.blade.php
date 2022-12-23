@@ -5,13 +5,13 @@
           <h4>DC COMICS</h4>
           <nav>
             <ul>
-              <li><a href="#">Characters</a></li>
-              <li><a href="#">Comics</a></li>
-              <li><a href="#">Movies</a></li>
-              <li><a href="#">TV</a></li>
-              <li><a href="#">Games</a></li>
-              <li><a href="#">Videos</a></li>
-              <li><a href="#">News</a></li>
+                <li><a class="{{Route::currentRouteName() === 'characters' ? 'active' : ''}}" href="{{Route('characters')}}">characters</a></li>
+                <li><a class="{{Route::currentRouteName() === 'comics' ? 'active' : ''}}" href="{{Route('comics')}}">comics</a></li>
+                <li><a class="{{Route::currentRouteName() === 'movies' ? 'active' : ''}}" href="{{Route('movies')}}">movies</a></li>
+                <li><a class="{{Route::currentRouteName() === 'tv' ? 'active' : ''}}" href="{{Route('tv')}}">tv</a></li>
+                <li><a class="{{Route::currentRouteName() === 'games' ? 'active' : ''}}" href="{{Route('games')}}">games</a></li>
+                <li><a class="{{Route::currentRouteName() === 'videos' ? 'active' : ''}}" href="{{Route('videos')}}">videos</a></li>
+                <li><a class="{{Route::currentRouteName() === 'news' ? 'active' : ''}}" href="{{Route('news')}}">news</a></li>
             </ul>
           </nav>
 

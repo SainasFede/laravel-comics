@@ -18,7 +18,8 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/comics', function () {
-    return view('comics');
+    $comics = config('db_comics.comics');
+    return view('comics', compact('comics'));
 })->name('comics');
 
 Route::get('/characters', function () {
@@ -56,5 +57,9 @@ Route::get('/tv', function () {
 Route::get('/videos', function () {
     return view('videos');
 })->name('videos');
+
+Route::get('/detail_comic', function () {
+    return view('comic_detail');
+})->name('comic_detail');
 
 
