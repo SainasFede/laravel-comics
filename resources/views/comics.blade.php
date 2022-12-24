@@ -9,12 +9,12 @@
         <section class="dc-series">
             <div class="current-series">
                 @foreach ($comics as $comic)
-                <div class="card">
-                    <div class="img-card">
-                      <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+                    <div class="card">
+                        <div class="img-card">
+                          <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+                        </div>
+                        <a href="{{route('comic_detail', ['id' => $comic['id']])}}"><h4>{{$comic['title']}}</h4></a>
                     </div>
-                    <h4>{{$comic['title']}}</h4>
-                </div>
                 @endforeach
 
             </div>

@@ -1,4 +1,4 @@
-
+<div class="sign">
     <div class="footer-b">
 
       <button>
@@ -19,4 +19,5 @@
       </div>
 
     </div>
-  </footer>
+</div>
+

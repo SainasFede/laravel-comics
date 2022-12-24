@@ -145,9 +145,13 @@ section.dc-series{
           object-position: top;
         }
     };
+    a{
+        text-decoration: none;
+    }
     h4{
       color: white;
       font-size: 0.8rem;
+      &:hover{color: #0282f9;}
     }
   }
 /*FOOTER*/
@@ -159,7 +163,7 @@ section.dc-series{
         height: 400px;
         align-items: center;
         .footer-t{
-          //background-image: url('../../resourses/img/dc-logo-bg.png');
+          background-image: url('../img/dc-logo-bg.png');
           background-position: right;
           background-repeat: no-repeat;
           width: 70%;
@@ -190,7 +194,7 @@ section.dc-series{
       }
 
 /*FOOTER SIGN*/
-footer{
+.sign{
     flex-direction: column;
     height: 120px;
     background-color: #303030;
@@ -230,3 +234,46 @@ footer{
         }
       }
   }
+
+/*COMIC-DETAIL*/
+section.container-comic{
+    width: 100%;
+    height: 600px;
+    background-color: #1c1c1c;
+    color: white;
+    .comic-detail{
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px;
+        .description{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50%;
+            height: 50%;
+            .price{
+                background-color: #0282f9;
+                width: 10%;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+        .box-img{
+            width: 20%;
+            height: 70%;
+            border: 1px solid white;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

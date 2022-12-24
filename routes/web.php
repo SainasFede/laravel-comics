@@ -58,8 +58,11 @@ Route::get('/videos', function () {
     return view('videos');
 })->name('videos');
 
-Route::get('/detail_comic', function () {
-    return view('comic_detail');
+Route::get('/detail_comic/{id}', function ($id) {
+    $comics = config('db_comics.comics');
+    $comic_choice = array_filter($comics, fn ($item) => $item['id'] == $id);
+    $comic = $comic_choice[array_key_first($comic_choice)];
+    return view('comic_detail', compact('comic'));
 })->name('comic_detail');
 
 
